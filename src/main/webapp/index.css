@@ -1,0 +1,321 @@
+   * {
+       font-family: 'Inter', sans-serif;
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       letter-spacing: 1px;
+   }
+
+   a {
+       text-decoration: none;
+   }
+
+   /*--------------------Global-CSS-----------------*/
+   /*--------------------Header-----------------*/
+   .header {
+       background: #6d987a;
+       padding-inline: 16px;
+       margin-bottom: 20px;
+   }
+
+   .nav {
+       max-width: 1280px;
+       height: 90px;
+       margin-inline: auto;
+
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+   }
+
+   .logo {
+       font-size: 36px;
+       color: #f0f1e9;
+       font-family: "Comfortaa";
+   }
+
+   .nav-list {
+       display: flex;
+       gap: 32px;
+       list-style: none;
+   }
+
+   .nav-list a {
+       font-size: 18px;
+       color: #f0f1e9;
+       padding-block: 16px;
+   }
+
+   .nav-list a:hover {
+       color: #715950;
+       transition: 0.2s ease-in-out;
+   }
+
+   /*--------------------Header-----------------*/
+   /*--------------------Page-Home-----------------*/
+
+   .textHome {
+       text-align: center;
+       color: #6d987a;
+       font-size: 48px;
+   }
+
+   /*--------------------Page-Home-----------------*/
+   /*--------------------Page-Login-----------------*/
+
+   .page {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       align-content: center;
+       justify-content: center;
+       width: 100%;
+       height: 100vh;
+   }
+
+   .formLogin {
+       display: flex;
+       flex-direction: column;
+       background-color: #fff;
+       border-radius: 7px;
+       padding: 40px;
+       box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+       gap: 5px
+   }
+
+   .areaLogin img {
+       width: 420px;
+   }
+
+   .formLogin h1 {
+       padding: 0;
+       margin: 0;
+       font-weight: 500;
+       font-size: 2.3em;
+   }
+
+   .formLogin p {
+       display: inline-block;
+       font-size: 14px;
+       color: #666;
+       margin-bottom: 25px;
+   }
+
+   .formLogin input {
+       padding: 15px;
+       font-size: 14px;
+       border: 1px solid #ccc;
+       margin-bottom: 20px;
+       margin-top: 5px;
+       border-radius: 4px;
+       transition: all linear 160ms;
+       outline: none;
+   }
+
+
+   .formLogin input:focus {
+       border: 1px solid #6d987a;
+   }
+
+   .formLogin label {
+       font-size: 14px;
+       font-weight: 600;
+   }
+
+   .formLogin a {
+       display: inline-block;
+       margin-bottom: 20px;
+       font-size: 13px;
+       color: #555;
+       transition: all linear 160ms;
+   }
+
+   .formLogin a:hover {
+       color: #6d987a;
+   }
+
+   .btn {
+       background-color: #6d987a;
+       color: #fff;
+       font-size: 14px;
+       font-weight: 600;
+       border: none !important;
+       transition: all linear 160ms;
+       cursor: pointer;
+       margin: 0 !important;
+
+   }
+
+   .btn:hover {
+       transform: scale(1.05);
+       background-color: #6d987a;
+
+   }
+
+   /*--------------------Page-Home-----------------*/
+
+
+   .formCard {
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 7px;
+        padding: 40px;
+        box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4);
+        gap: 5px;
+        width: 500px;
+   }
+
+   .enterId input {
+    margin: 5px;
+    border-radius: 4px;
+    width: 150px;
+   }
+   /*--------------------Page-Home-----------------*/
+
+
+   /* Card container */
+   .card-container {
+     margin-bottom: 20px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     padding: 15px;
+   }
+
+   /* Card title */
+   .card-title {
+     margin-bottom: 10px;
+     font-size: 1.2em;
+   }
+
+   /* Card table */
+   .card-table {
+     width: 100%;
+     border-collapse: collapse;
+   }
+
+   .card-table th,
+   .card-table td {
+     padding: 5px;
+     border: 1px solid #ddd;
+     text-align: left;
+   }
+
+   .card-table th {
+     font-weight: bold;
+   }
+
+   /* Messages */
+   .no-cards,
+   .error-message,
+   .session-message {
+     padding: 10px;
+     border: 1px solid #ddd;
+     border-radius: 5px;
+     margin-bottom: 15px;
+   }
+
+   .no-cards {
+     color: #ccc;
+   }
+
+   .error-message {
+     color: red;
+   }
+
+   .session-message {
+     color: orange;
+   }
+
+   /*--------------------MODAL-----------------*/
+   .edit-modal {
+       display: none;
+       position: fixed;
+       z-index: 1;
+       left: 0;
+       top: 0;
+       width: 100%;
+       height: 100%;
+       overflow: auto;
+       background-color: rgb(0, 0, 0);
+       background-color: rgba(0, 0, 0, 0.4);
+   }
+
+
+   .modal-content {
+       background-color: #fefefe;
+       margin: 15% auto;
+       padding: 20px;
+       border: 1px solid #888;
+       width: 50%;
+   }
+
+
+   .close {
+       color: #aaa;
+       float: right;
+       font-size: 28px;
+       font-weight: bold;
+   }
+
+   .close:hover,
+   .close:focus {
+       color: black;
+       text-decoration: none;
+       cursor: pointer;
+   }
+
+   /*--------------------MODAL-----------------*/
+
+   .complaint-form {
+       font-family: Arial, sans-serif;
+       margin: 2rem;
+   }
+
+   .complaint-form h2 {
+       text-align: center;
+       margin-bottom: 1rem;
+   }
+
+   .complaint-form label {
+       display: block;
+       margin-bottom: 0.5rem;
+       font-weight: bold;
+   }
+
+   .complaint-form input[type="text"],
+   .complaint-form textarea {
+       width: 100%;
+       padding: 0.5rem;
+       border: 1px solid #ccc;
+       border-radius: 4px;
+       box-sizing: border-box;
+       margin-bottom: 1rem;
+   }
+
+   .complaint-form textarea {
+       height: 10rem;
+   }
+
+   .complaint-form input[type="submit"] {
+       background-color: #4CAF50; /* Green */
+       border: none;
+       color: white;
+       padding: 1rem 2rem;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 16px;
+       cursor: pointer;
+       border-radius: 4px;
+       margin-top: 1rem;
+   }
+
+   .complaint-form input[type="submit"]:hover {
+       background-color: #3e8e41; /* Darker green */
+   }
+
+
+
+

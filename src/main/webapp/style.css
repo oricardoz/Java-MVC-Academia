@@ -1,0 +1,111 @@
+.card-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+.card-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-field {
+    width: calc(33.3% - 10px);
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.select-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6d987a;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error-message {
+    margin-top: 10px;
+     padding: 10px;
+    background-color: #ffcccc;
+    border: 1px solid #ff0000;
+    color: #ff0000;
+    border-radius: 4px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-field {
+    margin-right: 10px;
+}
+
+<!-- outra pagina -->
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.complaints-container {
+    display: flex;
+    flex-direction: column;  /* Stack complaints vertically */
+    gap: 20px;
+}
+
+.complaint {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.complaint h2 {
+    margin-bottom: 10px;
+}
+
+.no-complaints {
+    text-align: center;
+}
+
